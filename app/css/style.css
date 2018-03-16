@@ -995,6 +995,10 @@ span {
   visibility: hidden;
 }
 
+.overflow_visible {
+  overflow: visible;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1707,6 +1711,7 @@ header.fixed-header .header-container {
 .header-container .container {
   height: 60px;
   text-align: right;
+  overflow: visible;
 }
 
 .header-container .header-logo, .header-container .header-logo-dark {
@@ -2224,6 +2229,12 @@ header.fixed-header .header-container {
   height: 110px;
 }
 
+@media (max-width: 580px) {
+  .card__map {
+    padding-left: 8px;
+  }
+}
+
 .card__infowrap h5 {
   font-weight: bold;
   margin-bottom: 15px;
@@ -2244,6 +2255,13 @@ header.fixed-header .header-container {
     line-height: 15px;
     height: auto;
     max-height: 75px;
+  }
+}
+
+@media (max-width: 580px) {
+  .card__infowrap {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -3698,6 +3716,7 @@ header.fixed-header .header-container {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  overflow: visible;
 }
 
 .home-datetime__wrapper {
@@ -3846,6 +3865,13 @@ header.fixed-header .header-container {
   border: solid 1px #e4e4e4;
 }
 
+@media (max-width: 768px) {
+  .home-wrapper {
+    border: none;
+    padding: 20px 0 60px;
+  }
+}
+
 .home-wrapper__title {
   position: relative;
   line-height: 1.25;
@@ -3866,6 +3892,20 @@ header.fixed-header .header-container {
   background-color: #ffb757;
 }
 
+@media (max-width: 768px) {
+  .home-wrapper__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .home-wrapper__title {
+    font-size: 24px;
+    max-width: 80%;
+    margin: 0 auto 25px;
+  }
+}
+
 .home-slider {
   width: 100%;
   height: 400px;
@@ -3875,7 +3915,6 @@ header.fixed-header .header-container {
 
 .home-slider__imgslider {
   height: 400px;
-  overflow: hidden;
 }
 
 .home-slider__imgslider .swiper-slide {
@@ -3901,6 +3940,7 @@ header.fixed-header .header-container {
   margin-right: 25px;
   padding: 15px;
   height: 375px;
+  overflow: visible;
 }
 
 .home-slider__wrap .swiper-pagination {
@@ -3960,6 +4000,18 @@ header.fixed-header .header-container {
 
 .home-gridview__big {
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-gridview__big .col-md-6 {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .home-gridview__big {
+    display: none;
+  }
 }
 
 .home-biggrid {
@@ -4099,6 +4151,31 @@ header.fixed-header .header-container {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .home-biggrid__info p {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .home-biggrid__info {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-gridview__small .col-md-4 {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .home-gridview__small .col-md-4 {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+}
+
 .home-smallgrid {
   position: relative;
   width: 100%;
@@ -4125,6 +4202,15 @@ header.fixed-header .header-container {
   transform: translateY(0);
 }
 
+@media (max-width: 580px) {
+  .home-smallgrid:hover .home-smallgrid__default {
+    transform: translateY(0);
+  }
+  .home-smallgrid:hover .home-smallgrid__hover {
+    transform: translateY(-100%);
+  }
+}
+
 .home-smallgrid__default {
   position: absolute;
   top: 0;
@@ -4135,6 +4221,12 @@ header.fixed-header .header-container {
   transform: translateY(0);
   transition: transform 0.3s ease;
   will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .home-smallgrid__default {
+    padding: 10px;
+  }
 }
 
 .home-smallgrid__hover {
@@ -4152,12 +4244,47 @@ header.fixed-header .header-container {
 
 .home-smallgrid__wrapper {
   position: absolute;
-  bottom: 0;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
 }
 
 .home-smallgrid__wrapper h5 {
   color: #fff;
   letter-spacing: 1.1px;
+}
+
+@media (max-width: 768px) {
+  .home-smallgrid__wrapper {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .home-smallgrid__wrapper h5 {
+    font-size: 18px;
+  }
+}
+
+.home-gridview__button {
+  display: none;
+}
+
+@media (max-width: 580px) {
+  .home-gridview__button {
+    display: block;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-gridview__button button {
+    width: 100%;
+  }
 }
 
 .home-shadow__left {
@@ -4186,6 +4313,21 @@ header.fixed-header .header-container {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .home-shadow__left {
+    width: 10%;
+  }
+  .home-shadow__left img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-shadow__left {
+    width: 5%;
+  }
+}
+
 .home-shadow__right {
   position: absolute;
   right: 0;
@@ -4212,6 +4354,21 @@ header.fixed-header .header-container {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .home-shadow__right {
+    width: 10%;
+  }
+  .home-shadow__right img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-shadow__right {
+    width: 5%;
+  }
+}
+
 .home-overflowview {
   width: 100%;
   padding: 20px 0;
@@ -4220,6 +4377,55 @@ header.fixed-header .header-container {
 .home-rp__slider, .card__slider {
   overflow-y: visible;
   overflow-x: hidden;
+}
+
+@media (max-width: 1100px) {
+  .home-rp__slider .card__slider, .card__slider .card__slider {
+    height: 150px;
+  }
+}
+
+@media (max-width: 968px) {
+  .home-rp__slider .card__slider, .card__slider .card__slider {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-rp__slider .card__slider, .card__slider .card__slider {
+    height: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-rp__slider .card__map, .card__slider .card__map {
+    padding-left: 8px;
+  }
+  .home-rp__slider .card__infowrap, .card__slider .card__infowrap {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 580px) {
+  .home-rp__slider .swiper-slide, .card__slider .swiper-slide {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-rp__slider .swiper-slide, .card__slider .swiper-slide {
+    width: 325px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-rp__slider .swiper-slide, .card__slider .swiper-slide {
+    width: 100%;
+  }
+  .home-rp__slider .card, .card__slider .card {
+    margin: 0 5px;
+  }
 }
 
 .home-wrapper__plan {
