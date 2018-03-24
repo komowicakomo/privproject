@@ -3572,7 +3572,7 @@ header.fixed-header .header-container {
 .qty-form input[type="text"] {
   background-color: transparent;
   border: 0px solid transparent;
-  width: 49px;
+  width: 48px;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
@@ -6027,6 +6027,30 @@ header.fixed-header .header-container {
   background-color: transparent;
 }
 
+@media (max-width: 1440px) {
+  .detail-head.guide:after {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .detail-head.guide:after {
+    padding-top: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .detail-head.guide:after {
+    padding-top: 30%;
+  }
+}
+
+@media (max-width: 850px) {
+  .detail-head.guide:after {
+    padding-top: 35%;
+  }
+}
+
 .detail-head .container {
   position: absolute;
   height: 100%;
@@ -6545,10 +6569,30 @@ header.fixed-header .header-container {
   padding-bottom: 300px;
 }
 
+@media (max-width: 768px) {
+  .guide-container {
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 568px) {
+  .guide-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .guide-detail {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 568px) {
+  .guide-detail {
+    left: 0;
+    right: 0;
+  }
 }
 
 .guide-detail__person {
@@ -6565,6 +6609,22 @@ header.fixed-header .header-container {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+@media (max-width: 770px) {
+  .guide-detail__person {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 568px) {
+  .guide-detail__person {
+    width: 84px;
+    height: 84px;
+    display: block;
+    margin: 0 auto 32px;
+  }
 }
 
 .guide-detail__info {
@@ -6586,6 +6646,14 @@ header.fixed-header .header-container {
   margin: 8px 0;
 }
 
+@media (max-width: 568px) {
+  .guide-detail__info {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+}
+
 .guide-detail__icon {
   position: absolute;
   top: 50%;
@@ -6597,6 +6665,12 @@ header.fixed-header .header-container {
   fill: #fff;
 }
 
+@media (max-width: 568px) {
+  .guide-detail__icon {
+    display: none;
+  }
+}
+
 .guide-detail__desc {
   margin: 36px 0 36px 170px;
   max-width: 500px;
@@ -6606,6 +6680,22 @@ header.fixed-header .header-container {
   line-height: 1.33;
   color: #637381;
   margin-bottom: 36px;
+}
+
+@media (max-width: 770px) {
+  .guide-detail__desc {
+    margin: 36px auto 36px;
+    padding: 0 16px;
+  }
+  .guide-detail__desc p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 568px) {
+  .guide-detail__desc {
+    max-width: 100%;
+  }
 }
 
 .op-detail__head {

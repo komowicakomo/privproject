@@ -29,6 +29,18 @@
       padding-top: 15%;
       display: block;
       background-color: transparent;
+      @media(max-width: 1440px){
+        padding-top: 20%;
+      }
+      @media(max-width: 1200px){
+        padding-top: 25%;
+      }
+      @media(max-width: 1024px){
+        padding-top: 30%;
+      }
+       @media(max-width: 850px){
+        padding-top: 35%;
+      }
     }
   }
   .container{
