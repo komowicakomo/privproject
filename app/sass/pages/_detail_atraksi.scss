@@ -547,9 +547,11 @@
 
 // near atraction section
 .near-wrapper{
-  margin-top: 32px;
   &.col-md-4{
     max-width: 600px;
+  }
+  @media(max-width: 768px){
+    margin-top: 32px;
   }
 }
 .near__content{
