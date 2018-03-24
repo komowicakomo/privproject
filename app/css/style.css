@@ -5776,6 +5776,17 @@ header.fixed-header .header-container {
   display: none;
 }
 
+@media (max-width: 600px) {
+  .pembayaran .pembayaran-step .pembayaran-next, .pembayaran .pembayaran-step .bayar-container {
+    padding: 0px;
+  }
+  .pembayaran .pembayaran-step .pembayaran-next button, .pembayaran .pembayaran-step .bayar-container button {
+    max-width: calc(100% - 64px);
+    display: block;
+    margin: auto;
+  }
+}
+
 .pembayaran .pembayaran-step.active {
   display: block;
 }
@@ -7697,14 +7708,17 @@ header.fixed-header .header-container {
     z-index: 5;
     box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.06);
   }
-  .plan-destinasi .plan-destinasi-cart-price .pd-cp-box {
+  .plan-destinasi .plan-destinasi-cart-price .pd-cp-box, .plan-destinasi .plan-destinasi-cart-price .pd-cp-itn, .plan-destinasi .plan-destinasi-cart-price .pd-cp-isolate-box {
     display: none;
   }
-  .plan-destinasi .plan-destinasi-cart-price .pd-cp-box.subtotal {
+  .plan-destinasi .plan-destinasi-cart-price .pd-cp-box.subtotal, .plan-destinasi .plan-destinasi-cart-price .pd-cp-itn.subtotal, .plan-destinasi .plan-destinasi-cart-price .pd-cp-isolate-box.subtotal {
     display: block;
   }
-  .plan-destinasi .plan-destinasi-cart-price .pd-cp-box.subtotal .pd-cp-container {
+  .plan-destinasi .plan-destinasi-cart-price .pd-cp-box.subtotal .pd-cp-container, .plan-destinasi .plan-destinasi-cart-price .pd-cp-itn.subtotal .pd-cp-container, .plan-destinasi .plan-destinasi-cart-price .pd-cp-isolate-box.subtotal .pd-cp-container {
     margin-bottom: 8px;
+  }
+  .plan-destinasi .plan-destinasi-cart-price.pembayaran--cart {
+    height: 57px;
   }
 }
 

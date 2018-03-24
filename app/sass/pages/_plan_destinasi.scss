@@ -284,7 +284,7 @@
       overflow: hidden;
       z-index: 5;
       box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.06);
-      .pd-cp-box{
+      .pd-cp-box , .pd-cp-itn , .pd-cp-isolate-box{
         display: none;
         &.subtotal{
           display: block;
@@ -292,6 +292,9 @@
             margin-bottom: 8px;
           }
         }
+      }
+      &.pembayaran--cart{
+        height: 57px;
       }
     }
   }
