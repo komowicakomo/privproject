@@ -3061,6 +3061,23 @@ header.fixed-header .header-container {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .modal-filter-body .modal-child-filter {
+    height: auto;
+  }
+  .modal-filter-body .modal-child-filter .mcf-action.row.active {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    transform: translate(0, 0);
+    display: block;
+  }
+  .modal-filter-body .modal-child-filter .mcf-action.row.active .slider-group {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
 .modal-filter-body .modal-child-filter .mcf-action {
   width: 100%;
   opacity: 0;
@@ -7726,6 +7743,13 @@ header.fixed-header .header-container {
   padding-left: 0px;
 }
 
+@media (max-width: 768px) {
+  .plan-destinasi .button-place.row .col-md-9 {
+    padding-right: 0px;
+    margin-bottom: 18px;
+  }
+}
+
 .pd-maps-box {
   position: relative;
   width: 100%;
@@ -7820,6 +7844,15 @@ header.fixed-header .header-container {
   padding: 8px;
 }
 
+@media (max-width: 768px) {
+  .plan-cart-box .planbox-head {
+    text-align: left;
+  }
+  .plan-cart-box .planbox-head .planbox-text {
+    width: calc(100% - 126px);
+  }
+}
+
 .plan-cart-box .planbox-img {
   width: 20%;
   border-radius: 2px;
@@ -7837,12 +7870,25 @@ header.fixed-header .header-container {
   padding-top: 100%;
 }
 
+@media (max-width: 768px) {
+  .plan-cart-box .planbox-img {
+    height: 126px;
+    width: 126px;
+  }
+}
+
 .plan-cart-box .pcb-body {
   background-color: #f9f9fb;
   padding: 14px;
   box-shadow: 0 1px 0 0 #e4e4e4, 0 -1px 0 0 #e4e4e4;
   position: relative;
   display: none;
+}
+
+@media (max-width: 768px) {
+  .plan-cart-box .pcb-body {
+    text-align: left;
+  }
 }
 
 .plan-cart-box .pcb-body.show {
@@ -7862,7 +7908,14 @@ header.fixed-header .header-container {
   width: 100px;
   height: 100px;
   border-radius: 2px;
-  overflow: hidden;
+  position: relative;
+  overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .plan-cart-box .pcb-body .pcbb-img {
+    width: 100%;
+  }
 }
 
 .plan-cart-box .pcb-body .pcbb-img img {
@@ -7925,6 +7978,15 @@ header.fixed-header .header-container {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .plan-cart-box .pcb-body .pcbb-box {
+    text-align: left;
+  }
+  .plan-cart-box .pcb-body .pcbb-box .pcbb-label, .plan-cart-box .pcb-body .pcbb-box h5 {
+    text-align: left;
+  }
+}
+
 .plan-cart-box .pcb-body .pcbb-box .row {
   width: 100%;
   padding-top: 16px;
@@ -7959,6 +8021,7 @@ header.fixed-header .header-container {
 .plan-cart-box .pcb-body .pcbb-box .pcbbb-input {
   position: absolute;
   left: 0px;
+  z-index: 2;
 }
 
 .plan-cart-box .pcb-body .pcbb-box .pcbbb-input .checkbox-area label {
