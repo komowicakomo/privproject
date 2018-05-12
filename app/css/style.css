@@ -4441,6 +4441,22 @@ header.fixed-header .header-container {
   }
 }
 
+.home-smallgrid__play {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.home-smallgrid__play span {
+  color: #fff;
+  font-size: 64px;
+  opacity: 0.6;
+}
+
+.home-smallgrid__play--small span {
+  font-size: 36px;
+}
+
 .home-smallgrid__default {
   position: absolute;
   top: 0;
@@ -5635,6 +5651,43 @@ header.fixed-header .header-container {
 .rp__btn {
   text-align: center;
   margin: 50px 0 150px;
+}
+
+.rp__grid {
+  padding: 0 8px;
+}
+
+.rp__bigcontent {
+  padding: 0;
+}
+
+.rp__smgrid {
+  margin-bottom: 15px;
+}
+
+.rp__smgrid .home-smallgrid {
+  height: 257px;
+}
+
+.rp__smgrid:last-child {
+  margin: 0;
+}
+
+.rp__subtitle {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.rp__subtitle .home-wrapper__title {
+  margin-bottom: 20px;
+}
+
+.rp__atraksi {
+  margin-bottom: 50px;
+}
+
+.rp__atraksi:last-child {
+  margin-bottom: 0;
 }
 
 .word-navigation {
