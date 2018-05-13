@@ -96,7 +96,7 @@ inputs.forEach(function(input, handle) {
 });
 
 $(window).on('load' , function() {
-
+	
 	console.log('loaded')
 
 	var swiper = new Swiper('.swiper-container', {
@@ -122,7 +122,7 @@ $(window).on('load' , function() {
 			}, 
 			600: {
 				slidesPerView: 1 ,
-				spaceBetween: 15, 
+				spaceBetween: 0 , 
 				direction : 'horizontal'
 			}
 		},
@@ -144,10 +144,16 @@ $(window).on('load' , function() {
 	$('#'+target).addClass('active')
 	if(target == 'with-map'){
 		google.maps.event.trigger( document.getElementById('marketplace-map') ,'resize')
-		console.log(swiper)
 		swiper.update()
 	}
 	})
+
+	$(window).resize(function(){
+		console.log(swiper)
+		console.log('holla')
+		swiper.updateSlidesSize()
+		swiper.updateContainerSize()
+	  })
 
 })
 
