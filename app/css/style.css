@@ -3775,12 +3775,10 @@ header.fixed-header .header-container {
 
 .home-banner {
   position: relative;
-  margin-top: -60px;
 }
 
 .home-banner__slider {
   width: 100%;
-  min-height: 600px;
 }
 
 .home-banner__slider .swiper-pagination {
@@ -3829,7 +3827,49 @@ header.fixed-header .header-container {
 .home-banner__wrapper {
   width: 100%;
   position: relative;
-  min-height: 600px;
+}
+
+.home-banner__wrapper:before {
+  content: '';
+  display: block;
+  position: relative;
+  padding-top: 25%;
+}
+
+@media (min-width: 2000px) {
+  .home-banner__wrapper:before {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .home-banner__wrapper:before {
+    padding-top: 32%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-banner__wrapper:before {
+    padding-top: 38%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-banner__wrapper:before {
+    padding-top: 42%;
+  }
+}
+
+@media (max-width: 850px) {
+  .home-banner__wrapper:before {
+    padding-top: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-banner__wrapper {
+    min-height: 300px;
+  }
 }
 
 .home-banner__img {
@@ -3862,6 +3902,12 @@ header.fixed-header .header-container {
   color: #fff;
   letter-spacing: 1.5px;
   word-spacing: 5px;
+}
+
+@media (max-width: 600px) {
+  .home-banner__title {
+    font-size: 28px;
+  }
 }
 
 .home-banner__subtitle {
@@ -3937,9 +3983,6 @@ header.fixed-header .header-container {
   }
   .home-datetime__choose:last-child {
     border-bottom: 1px solid transparent;
-  }
-  .home-datetime__choose button {
-    display: none;
   }
 }
 
@@ -4229,7 +4272,11 @@ header.fixed-header .header-container {
 }
 
 .home-gridview__big {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+
+.home-gridview__big .col-md-6 {
+  padding: 0 8px;
 }
 
 @media (max-width: 768px) {
@@ -4391,6 +4438,10 @@ header.fixed-header .header-container {
   .home-biggrid__info {
     margin-right: 5px;
   }
+}
+
+.home-gridview__small .col-md-4 {
+  padding: 0 8px;
 }
 
 @media (max-width: 768px) {
@@ -5611,6 +5662,14 @@ header.fixed-header .header-container {
   padding: 10px;
 }
 
+.rp__content.col-md-4 {
+  padding: 20px 8px 0;
+}
+
+.rp__content.col-md-4 .home-smallgrid {
+  height: 254px;
+}
+
 @media (max-width: 770px) {
   .rp__content.col-md-4 {
     max-width: 50%;
@@ -5692,14 +5751,14 @@ header.fixed-header .header-container {
 }
 
 .rp__smgrid {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   max-width: 100%;
   -ms-flex: 0 0 100%;
       flex: 0 0 100%;
 }
 
 .rp__smgrid .home-smallgrid {
-  height: 257px;
+  height: 254px;
 }
 
 .rp__smgrid:last-child {
