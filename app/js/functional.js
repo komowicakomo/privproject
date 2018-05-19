@@ -43,7 +43,7 @@ $(document).on('click', '.close--overlay', function () {
 })
 
 var closeModal = function(){
-	$('#general--modal').fadeOut()
+	$('#general--modal').hide()
 	$('#general--modal').removeClass()
 	$('#general--modal').addClass('general--modal')
   $('body').css('overflow', 'auto');
