@@ -16,12 +16,22 @@
      breakpoints: {
        580: {
          initialSlide: 0,
-         slidesPerView: 2
+         slidesPerView: 2,
+         simulateTouch: false
        }
      }
    });
    galleryTop.params.control = galleryThumbs;
    galleryThumbs.params.control = galleryTop;
+
+    // mobile only
+    let windowWidth = window.innerWidth
+
+    if (windowWidth < 760) {
+      $(".js-imagepopup").on("click", function () {
+        $.gallery();
+      });
+    }
 
     // maps
     var map;
