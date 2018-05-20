@@ -7701,6 +7701,10 @@ header.fixed-header .header-container {
   }
 }
 
+.op-detail__price {
+  z-index: 6;
+}
+
 @media (max-width: 768px) {
   .op-detail__price {
     display: none;
@@ -7866,8 +7870,18 @@ header.fixed-header .header-container {
 
 @media (max-width: 786px) {
   .options-cards .cards-head .btn--blue {
-    display: none;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
+}
+
+.z15 {
+  position: relative;
+  z-index: 15;
 }
 
 .dashpanel {
