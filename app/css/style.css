@@ -6809,6 +6809,10 @@ header.fixed-header .header-container {
   border-top: solid 1px #e4e4e4;
 }
 
+.detail-container .container--full.white .ccw-body.no-lines, .detail-container .container--full.grey .ccw-body.no-lines {
+  border-top: 0px solid transparent;
+}
+
 .detail-container .container--full.white .ccw-body img, .detail-container .container--full.grey .ccw-body img {
   display: -ms-inline-flexbox;
   display: inline-flex;
