@@ -7862,14 +7862,18 @@ header.fixed-header .header-container {
   position: relative;
 }
 
-.options-cards .cards-head .btn--blue {
+.options-cards .cards-body {
+  position: relative;
+}
+
+.options-cards .cards-body .btn--blue {
   position: absolute;
   right: 12px;
   bottom: 12px;
 }
 
 @media (max-width: 786px) {
-  .options-cards .cards-head .btn--blue {
+  .options-cards .cards-body .btn--blue {
     position: relative;
     right: 0;
     bottom: 0;

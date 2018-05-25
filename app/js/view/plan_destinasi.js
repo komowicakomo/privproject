@@ -31,7 +31,7 @@ function setSliderHandle(i, value) {
 	r[i] = value;
 	keypressSlider.noUiSlider.set(r);
 }
- 
+
 // Listen to keydown events on the input field.
 inputs.forEach(function(input, handle) {
 
@@ -96,10 +96,10 @@ inputs.forEach(function(input, handle) {
 });
 
 $(window).on('load' , function() {
-	
+
 	console.log('loaded')
 
-	var swiper = new Swiper('.swiper-container', {
+	var swiperDestinasi = new Swiper('.swiper-destinasi', {
 		direction: 'vertical',
 		autoResize: false,
 		resizeReInit: true,
@@ -117,12 +117,12 @@ $(window).on('load' , function() {
 			},
 			768: {
 				slidesPerView: 2,
-				spaceBetween: 15, 
+				spaceBetween: 15,
 				direction : 'horizontal'
-			}, 
+			},
 			600: {
 				slidesPerView: 1 ,
-				spaceBetween: 0 , 
+				spaceBetween: 0 ,
 				direction : 'horizontal'
 			}
 		},
@@ -144,26 +144,15 @@ $(window).on('load' , function() {
 	$('#'+target).addClass('active')
 	if(target == 'with-map'){
 		google.maps.event.trigger( document.getElementById('marketplace-map') ,'resize')
-		swiper.update()
+		swiperDestinasi.update()
 	}
 	})
 
 	$(window).resize(function(){
-		console.log(swiper)
+		console.log(swiperDestinasi)
 		console.log('holla')
-		swiper.updateSlidesSize()
-		swiper.updateContainerSize()
+		swiperDestinasi.updateSlidesSize()
+		swiperDestinasi.updateContainerSize()
 	  })
 
 })
-
-
-
-
-
-
-
-
-
-
-
