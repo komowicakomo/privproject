@@ -7294,6 +7294,13 @@ header.fixed-header .header-container {
   }
 }
 
+@media (max-width: 600px) {
+  .word-navigation {
+    overflow: auto;
+    width: 100%;
+  }
+}
+
 .guide-container {
   padding-bottom: 300px;
 }
@@ -8935,10 +8942,12 @@ header.fixed-header .header-container {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 120px;
     overflow: hidden;
     z-index: 5;
     box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+  .plan-destinasi .plan-destinasi-cart-price .pd-cp-inner {
+    margin-bottom: 0px;
   }
   .plan-destinasi .plan-destinasi-cart-price .pd-cp-box, .plan-destinasi .plan-destinasi-cart-price .pd-cp-itn, .plan-destinasi .plan-destinasi-cart-price .pd-cp-isolate-box {
     display: none;

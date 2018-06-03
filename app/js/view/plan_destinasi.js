@@ -97,7 +97,33 @@ inputs.forEach(function(input, handle) {
 
 $(window).on('load' , function() {
 
-	console.log('loaded')
+	var isMobile = $(window).width() < 600
+
+  var parents = $('.plan-destinasi-body .row').offset().left
+  var pos = $('.plan-destinasi-cart-price').offset().left
+  var bottom = pos - parents
+
+  console.log('pos' , pos , parents)
+
+  if ( !isMobile) {
+    $(".plan-destinasi-cart-price").stick_in_parent({
+      offset_top : 80 + 76
+    }).on("sticky_kit:stick", function(e) {
+      e.target.style.left = pos + 'px'
+      console.log(e.target.style)
+    }).on("sticky_kit:unstick", function(e) {
+      e.target.style.left = 0 + 'px'
+    }).on('sticky_kit:bottom', function(e) {
+      e.target.style.left = bottom + 'px'
+    }).on('sticky_kit:unbottom', function(e) {
+      e.target.style.left = pos + 'px'
+    })
+  }
+  else {
+    $(".plan-destinasi-cart-price").trigger("sticky_kit:detach");
+  }
+
+
 
 	var swiperDestinasi = new Swiper('.swiper-destinasi', {
 		direction: 'vertical',

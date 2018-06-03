@@ -237,7 +237,7 @@
         max-width: 680px;
         border-top: solid 1px #e4e4e4;
         &.no-lines{
-          border-top: 0px solid transparent ; 
+          border-top: 0px solid transparent ;
         }
         img{
           display: inline-flex;
@@ -653,5 +653,12 @@
 .activity-wrap{
   @media(max-width: 568px){
      white-space: nowrap;
+  }
+}
+
+.word-navigation{
+  @media(max-width: 600px){
+    overflow: auto;
+    width: 100%;
   }
 }
