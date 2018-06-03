@@ -9076,10 +9076,16 @@ header.fixed-header .header-container {
 
 .plan-destinasi .button-place {
   margin-top: 24px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .plan-destinasi .button-place .btn-add {
   margin-top: 0px;
+}
+
+.plan-destinasi .button-place > div + div {
+  margin-top: 16px;
 }
 
 .plan-destinasi .button-place button {
