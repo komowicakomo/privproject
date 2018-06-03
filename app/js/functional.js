@@ -1,7 +1,7 @@
 $.currencyFormat = function (data) {
 	return data.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
 }
-
+ 
 $.onLoading = function (message) {
 	var loader = $('#loader')
 	loader.fadeIn()
