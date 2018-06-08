@@ -6235,6 +6235,32 @@ header.fixed-header .header-container {
   background-color: #5b8ef4;
 }
 
+.point-connector .point-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  vertical-align: middle;
+  padding-left: 12px;
+}
+
+.point-connector .point-inner img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.point-connector .point-inner .point-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 4px;
+}
+
+.point-connector .point-text {
+  font-size: 15px;
+  color: #5b8ef4;
+}
+
 @media (max-width: 600px) {
   .point-connector {
     display: none;
@@ -8960,6 +8986,9 @@ header.fixed-header .header-container {
   }
   .plan-destinasi .plan-destinasi-cart-price.pembayaran--cart {
     height: 57px;
+  }
+  .plan-destinasi .plan-destinasi-cart-price .social-share-container {
+    display: none;
   }
 }
 

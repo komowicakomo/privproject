@@ -1,7 +1,7 @@
 $.currencyFormat = function (data) {
 	return data.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
 }
- 
+
 $.onLoading = function (message) {
 	var loader = $('#loader')
 	loader.fadeIn()
@@ -593,17 +593,21 @@ $(window).on('load',function(){
 
   $('.point-square-bottom').each(function(){
 
-    var Connector = '<div class="point-connector"></div>'
     var Parents = $(this).parents('.itn-body-box')
     var Index = Parents.index() + 1
     var NextPoint = $('.itn-body-box').eq(Index)
     var CurPos = $(this).offset()
     var NextPos = NextPoint.find('.point-square-top').offset()
+		var data = $(this).data()
+		var iconUrl = './images/icon/' + data.icon
+		var images =  data.icon ? '<img src='+iconUrl+' />' : ' '
+		var texts = data.text ? '<div class="point-text">'+data.text+'</div>' : ' '
+		var Connector = '<div class="point-connector"><div class="point-inner">'+ images + texts +'</div></div>'
+
 
     if(NextPos !== undefined){
       var ConnectorH = NextPos.top - CurPos.top
       $(this).append(Connector)
-
       $(this).find('.point-connector').css('height' , ConnectorH)
     }
 

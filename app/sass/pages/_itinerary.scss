@@ -246,6 +246,28 @@
   z-index: 1;
   width: 3px;
   background-color: #5b8ef4;
+  .point-inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 12px;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .point-text{
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 4px;
+    }
+  }
+  .point-text{
+    font-size: 15px;
+    color: #5b8ef4;
+  }
   @media (max-width: 600px){
     display: none;
   }
