@@ -5972,12 +5972,17 @@ header.fixed-header .header-container {
   padding-top: 14px;
   margin-right: 40px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .word-navigation ul li.active {
   font-weight: 700;
   color: #5b8ef4;
   border-bottom: 4px solid  #5b8ef4;
+}
+
+.word-navigation ul li:hover {
+  color: #5b8ef4;
 }
 
 @media (max-width: 600px) {
@@ -6193,6 +6198,67 @@ header.fixed-header .header-container {
   }
 }
 
+.itinerary .ccw-body {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  width: 100%;
+  max-width: 680px;
+}
+
+.itinerary .ccw-body img {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.itinerary .ccw-body p {
+  margin-top: 12px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 600;
+  line-height: 1;
+  text-align: left;
+  color: #3d3d3d;
+  margin-bottom: 0px;
+  margin-left: 8px;
+}
+
+.itinerary .ccw-body ul li {
+  font-size: 15px;
+  line-height: 1.33;
+  text-align: left;
+  color: #637381;
+  font-weight: 300;
+  margin-bottom: 16px;
+  list-style: circle;
+}
+
+@media (max-width: 600px) {
+  .itinerary .ccw-body ul {
+    padding-left: 32px;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .itinerary .ccw-body {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: none;
+  }
+  .itinerary .ccw-body .col-md-6 {
+    padding: 0;
+  }
+}
+
+.itinerary .ccw-body.terms p {
+  color: #637381;
+  line-height: 1.33;
+}
+
+.itinerary .ccw-body.terms p + h5 {
+  margin-top: 48px;
+}
+
 .point-square {
   position: relative;
   margin: auto;
@@ -6265,6 +6331,14 @@ header.fixed-header .header-container {
   .point-connector {
     display: none;
   }
+}
+
+.word-navigation-body > div {
+  display: none !important;
+}
+
+.word-navigation-body > div.active {
+  display: block !important;
 }
 
 .pembayaran .plan-destinasi-mb-inner {
@@ -7895,6 +7969,14 @@ header.fixed-header .header-container {
   text-decoration: line-through;
 }
 
+.available .ccw-body .options-cards.active button div {
+  display: none;
+}
+
+.available .ccw-body .options-cards.active button .ico {
+  display: block;
+}
+
 .options-cards .cards-head {
   position: relative;
 }
@@ -7907,6 +7989,8 @@ header.fixed-header .header-container {
   position: absolute;
   right: 12px;
   bottom: 12px;
+  height: 46px;
+  min-width: 120px;
 }
 
 @media (max-width: 786px) {
@@ -7918,6 +8002,63 @@ header.fixed-header .header-container {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+}
+
+.options-cards .ico {
+  width: 15px;
+  height: 25px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.options-cards .ico:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s ease;
+}
+
+.options-cards .ico:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 25px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 0.3s ease;
+}
+
+.options-cards.active .ico {
+  display: block;
+  opacity: 1;
+  transition: 0.4s ease 0.3s;
+}
+
+.options-cards.active .ico:before {
+  transform: scale(1);
+  transition: transform 0.4s ease 0.4s;
+}
+
+.options-cards.active .ico:after {
+  transform: scale(1);
+  transition: transform 0.4s ease 0.8s;
 }
 
 .z15 {

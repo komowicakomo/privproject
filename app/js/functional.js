@@ -613,6 +613,29 @@ $(window).on('load',function(){
 
   })
 
+	$(document).on('click' , 'button' , function(){
+		var actions = $(this).data('action')
+
+		if(actions === 'toggle-options'){
+			$(this).parents('.options-cards').toggleClass('active')
+		}
+
+	})
+
+	$(document).on('click' , '.word-navigation li' , function(){
+		var For = $(this).parents('.word-navigation').data('for')
+		var index = $(this).index()
+
+		$('.word-navigation li').removeClass('active')
+		$(this).addClass('active')
+
+		if(For){
+			$(For).removeClass('active')
+			$(For).eq(index).addClass('active')
+		}
+
+	})
+
 })
 
 $(document).on('click','.social-share-buttons',function(){
