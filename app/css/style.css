@@ -1706,7 +1706,7 @@ header.fixed-header .header-container {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 4;
+  z-index: 10;
 }
 
 .header-container {
@@ -1924,6 +1924,11 @@ header.fixed-header .header-container {
   .header-hamburger span {
     font-size: 24px;
   }
+}
+
+footer {
+  position: relative;
+  z-index: 7;
 }
 
 .footer-container {
@@ -7816,10 +7821,19 @@ header.fixed-header .header-container {
   z-index: 6;
 }
 
+.op-detail__price.is_stuck {
+  top: 80px !important;
+  position: fixed !important;
+}
+
 @media (max-width: 768px) {
   .op-detail__price {
     display: none;
   }
+}
+
+.plan-destinasi.op-plan-destinasi {
+  padding-bottom: 0px;
 }
 
 @media (max-width: 800px) {
@@ -8063,7 +8077,7 @@ header.fixed-header .header-container {
 
 .z15 {
   position: relative;
-  z-index: 15;
+  z-index: 6;
 }
 
 .dashpanel {

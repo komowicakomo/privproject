@@ -233,12 +233,17 @@
 	}
 }
 .op-detail__price{
+	&.is_stuck{
+		top: 80px !important ;
+		position: fixed !important;
+	}
 	z-index: 6 ;
 	@media(max-width: 768px){
 		display: none;
 	}
 }
 .plan-destinasi.op-plan-destinasi{
+	padding-bottom: 0px;
 	@media(max-width: 800px){
 		.row{
 			text-align: left;
@@ -463,5 +468,5 @@
 
 .z15{
 	position: relative;
-	z-index: 15;
+	z-index: 6;
 }
