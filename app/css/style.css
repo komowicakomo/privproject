@@ -2438,19 +2438,19 @@ footer {
   display: block;
 }
 
-.general--modal.error .modal-container {
+.general--modal.error-modal .modal-container {
   border-color: #f05050;
 }
 
-.general--modal.error .modal--error {
+.general--modal.error-modal .modal--error {
   display: block;
 }
 
-.general--modal.error .close--modal {
+.general--modal.error-modal .close--modal {
   display: none;
 }
 
-.general--modal.error .close--modal.close--custom {
+.general--modal.error-modal .close--modal.close--custom {
   display: block;
 }
 
@@ -7007,6 +7007,7 @@ footer {
 .detail-gallery {
   width: 100%;
   max-width: 680px;
+  overflow: hidden;
 }
 
 .detail-gallery .swiper-container {

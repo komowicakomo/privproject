@@ -315,6 +315,7 @@
 .detail-gallery{
   width: 100%;
   max-width: 680px;
+  overflow: hidden;
   .swiper-container{
     width: 100%;
   }

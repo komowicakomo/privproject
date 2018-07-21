@@ -1,3 +1,5 @@
+var modalContainer = $('#general--modal')
+
 $.currencyFormat = function (data) {
 	return data.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
 }
@@ -10,28 +12,6 @@ $.onLoading = function (message) {
 $.hideLoading = function () {
 	var loader = $('#loader')
 	loader.fadeOut()
-}
-
-$.alert = function (message, ok, title) {
-	// alert(message)
-	modalContainer.fadeIn()
-	modalContainer.addClass('error')
-
-	if(message !== undefined){
-		modalContainer.find('.mt--body').html(message)
-	}
-
-	if(title !== undefined){
-		modalContainer.find('.mt--head').html(title)
-	}
-
-	$(".btnAlertOk").unbind("click")
-	$(".btnAlertOk").click(function (e) {
-		e.preventDefault()
-		if (ok != undefined && typeof (ok) == 'function')
-			ok()
-		closeModal()
-	})
 }
 
 $(document).on('click','.close--modal',function(){
@@ -49,7 +29,31 @@ var closeModal = function(){
   $('body').css('overflow', 'auto');
 }
 
-var modalContainer = $('#general--modal')
+$.alert = function (message, ok, title) {
+
+	console.log(modalContainer)
+
+	modalContainer.fadeIn()
+	modalContainer.addClass('error-modal')
+
+	console.log('alert')
+
+	if(message !== undefined){
+		modalContainer.find('.mt--body').html(message)
+	}
+
+	if(title !== undefined){
+		modalContainer.find('.mt--head').html(title)
+	}
+
+	$(".btnAlertOk").unbind("click")
+	$(".btnAlertOk").click(function (e) {
+		e.preventDefault()
+		if (ok != undefined && typeof (ok) == 'function')
+			ok()
+		closeModal()
+	})
+}
 
 $.info = function (message, ok, title, redir_url) {
 	// alert(message)

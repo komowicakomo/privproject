@@ -33,7 +33,7 @@
       }
     }
   }
-  &.error{
+  &.error-modal{
     .modal-container{
       border-color: #f05050;
     }
@@ -718,7 +718,7 @@
         padding-bottom: 24px;
         position: relative;
         transform: translate( 0, 0);
-        display : block ; 
+        display : block ;
         .slider-group{
           margin-top: 24px;
           margin-bottom: 24px;
