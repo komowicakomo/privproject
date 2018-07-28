@@ -7407,6 +7407,179 @@ footer {
   }
 }
 
+.add--detail {
+  padding: 15px;
+  background-color: white;
+}
+
+.add--detail .add--table {
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.add--detail .add--filter {
+  margin-bottom: 24px;
+}
+
+.add--detail .add--filter .add--row > div {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .add--detail .add--filter .add--row > div {
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+    width: 100%;
+  }
+}
+
+.add--detail .add--filter .add--row > div label {
+  margin-bottom: 5px;
+}
+
+.add--detail .add--filter .add--row > div.btn--container {
+  padding-top: 20px;
+}
+
+.add--detail h3 {
+  margin-bottom: 14px;
+}
+
+.add--detail .add--hotel_room {
+  border-top: solid 1px #e4e4e4;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.add--detail .add--row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+@media (max-width: 600px) {
+  .add--detail .add--row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.add--detail .add--images {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+  position: relative;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .add--detail .add--images {
+    margin-bottom: 24px;
+  }
+}
+
+.add--detail .add--images img {
+  position: absolute;
+  object-fit: cover;
+}
+
+.add--detail .add--images:after {
+  content: '';
+  padding-top: 100%;
+  display: block;
+}
+
+.add--detail .room--name {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #3d3d3d;
+  margin-bottom: 8px;
+}
+
+.add--detail .room--desc {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #637381;
+}
+
+.add--detail .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.add--detail .detail--price {
+  text-align: left;
+}
+
+.add--detail .detail--price .price--disc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  text-align: left;
+}
+
+.add--detail .detail--price .price--disc > div {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.add--detail .detail--price .price--disc > div.price--disc_price {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #637381;
+  text-decoration: line-through;
+}
+
+.add--detail .detail--price .price--disc > div.price--disc_number {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #5b8ef4;
+}
+
+.add--detail .detail--price .actual--price {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #73bd67;
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+
+.add--detail .detail--price .price--desc {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #637381;
+}
+
 .guide-container {
   padding-bottom: 300px;
 }
