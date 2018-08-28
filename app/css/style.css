@@ -3885,6 +3885,130 @@ footer {
   margin: auto;
 }
 
+.magic-box-placeholder {
+  margin-top: 40px;
+}
+
+.setrip-magic_box {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  background-color: #ffffff;
+  box-shadow: 0 1px 22px 0 rgba(0, 0, 0, 0.08);
+}
+
+.setrip-magic_box .magic_box_content {
+  padding: 24px;
+}
+
+.setrip-magic_box h4 {
+  margin-right: 24px;
+}
+
+.setrip-magic_box .radio-area {
+  display: inline-block;
+}
+
+.setrip-magic_box .radio-area label {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: auto;
+  padding-left: 28px;
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.setrip-magic_box .radio-area label:before {
+  width: 14px;
+  height: 14px;
+  left: 5px;
+}
+
+.setrip-magic_box .radio-area label:after {
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  background-color: #ffb757;
+}
+
+.setrip-magic_box .radio-area + .radio-area {
+  margin-left: 12px;
+}
+
+.row-inline .inline-magic {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.row-inline .form-group {
+  margin: 0px;
+}
+
+.row-inline .form-group.transparent {
+  max-width: 200px;
+}
+
+.row-inline .form-group.transparent select {
+  border: 0px solid transparent;
+}
+
+.magic-inline-form {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.magic-inline-form.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.flex-magic {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-magic > div {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.magic_box_navigation .magic_box_nav_square {
+  padding: 24px;
+  background-color: #f8f7f6;
+  height: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.magic_box_navigation .magic_box_nav_square .magic-box_square_inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.magic_box_navigation .magic_box_nav_square .magic-box_square_inner img {
+  margin: auto;
+  width: 24px;
+  display: block;
+}
+
+.magic_box_navigation .magic_box_nav_square.active {
+  background-color: #ffb757;
+}
+
+.magic_box_navigation .magic-box-nav-text {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
 .home-banner {
   position: relative;
 }
