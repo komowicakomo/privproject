@@ -3885,6 +3885,42 @@ footer {
   margin: auto;
 }
 
+.magic--box--container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.magic--box--container .row > div {
+  position: relative;
+}
+
+.magic--box--container h2 {
+  text-align: right;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  font-size: 36px;
+}
+
+@media (max-width: 692px) {
+  .magic--box--container h2 {
+    position: relative;
+    right: auto;
+    transform: translate(0);
+    top: auto;
+    display: block;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+b {
+  font-weight: 700;
+}
+
 .magic-box-placeholder {
   margin-top: 40px;
 }

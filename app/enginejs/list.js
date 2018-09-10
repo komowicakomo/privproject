@@ -16,6 +16,10 @@ var lists = [
     path: "index-solid.html?view=home"
   },
   {
+    name: "Homepage new",
+    path: "index-solid.html?view=homepage--new"
+  },
+  {
     name: "Homepage Login",
     path: "index.html?view=home"
   },
